@@ -1,4 +1,4 @@
-# [Agent Name] Specification Template
+# PartnerPulse Agent Specification Template
 
 > Reusable PartnerPulse template for designing, reviewing, and approving AI agent specifications. Copy this file for each new agent, replace every bracketed placeholder, and keep all required sections. If a section does not apply, write `Not applicable` and explain why instead of removing it.
 
@@ -77,7 +77,7 @@ Example:
 | Status | Yes | Draft |
 | Owner or Team | Yes | Partner Success Team |
 | Primary Users | Yes | Reseller success managers and internal reviewers |
-| Last Updated | Yes | YYYY-MM-DD |
+| Last Updated | Yes | 2026-01-15 |
 | Approved By | Yes, before production use | Pending review |
 
 ## Agent Name
@@ -289,12 +289,12 @@ Unless the use case requires another format, every response should clearly separ
 
 Example:
 
-| Output | Example |
-|---|---|
-| Known Information | The supplied trial note says three departments attended the kickoff. Source: user-provided trial note. |
-| Missing Information | Activation status is `Not provided`. |
-| Recommendation | Request an updated activation status before preparing a sponsor-ready summary. |
-| Draft Communication | Draft only: Please confirm the current activation status and any blockers before the next checkpoint. |
+| Output | Required | Description | Approval Requirement |
+|---|---|---|---|
+| Known Information | Yes | The supplied trial note says three departments attended the kickoff. Source: user-provided trial note. | Review recommended |
+| Missing Information | Yes, when applicable | Activation status is `Not provided`. | Review recommended |
+| Recommendations or Next Actions | Yes, when applicable | Request an updated activation status before preparing a sponsor-ready summary. | Human review required before important action |
+| Draft Communication | When requested | Draft only: Please confirm the current activation status and any blockers before the next checkpoint. | Human approval required before sending |
 
 ## Decision Logic
 
@@ -311,7 +311,7 @@ Define deterministic rules that map conditions to responses, confidence levels, 
 | Request requires customer-impacting action | Prepare draft or recommendation only | Approval prompt with choices | Yes |
 | Request is outside scope | Decline or redirect to an appropriate human owner | Limitation statement and in-scope alternative | `[Yes / No]` |
 | Reliable recommendation cannot be made | Stop, explain why, and list what is needed | No recommendation; missing or unreliable information noted | Yes |
-| Request depends on future capability | State that the capability is not currently available unless approved documentation says otherwise | Current limitation and possible future enhancement note | `[Yes / No]` |
+| Request depends on future capability | State that the capability is not currently available unless approved documentation says otherwise | Current limitation and possible future enhancement note | No, unless an exception is requested |
 
 ### Facts, Recommendations, and Confidence
 
