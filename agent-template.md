@@ -1,6 +1,6 @@
 # Agent Template
 
-> Reusable starting point for designing a PartnerPulse agent. Copy this file into a new agent specification, replace bracketed guidance with agent-specific content, and remove sections that are not applicable. Do not treat this template as the instructions for a completed agent.
+> Reusable starting point for designing a PartnerPulse agent. Copy this file into a new agent specification, replace bracketed guidance with agent-specific content, and keep all required sections. If an optional item does not apply, mark it `Not applicable` rather than removing the section. This template is not the operating instructions for a completed agent.
 
 ---
 
