@@ -15,10 +15,10 @@
 - [Users and Stakeholders](#users-and-stakeholders)
 - [Inputs](#inputs)
 - [Outputs](#outputs)
-- [Workflow](#workflow)
 - [Decision Logic](#decision-logic)
-- [Rules and Guardrails](#rules-and-guardrails)
+- [Workflow](#workflow)
 - [Human Review and Approval](#human-review-and-approval)
+- [Rules and Guardrails](#rules-and-guardrails)
 - [Response Style](#response-style)
 - [Privacy and Data Handling](#privacy-and-data-handling)
 - [Source Validation](#source-validation)
@@ -77,7 +77,7 @@ Example:
 | Status | Yes | Draft |
 | Owner or Team | Yes | Partner Success Team |
 | Primary Users | Yes | Reseller success managers and internal reviewers |
-| Last Updated | Yes | 2026-01-15 |
+| Last Updated | Yes | YYYY-MM-DD |
 | Approved By | Yes, before production use | Pending review |
 
 ## Agent Name
